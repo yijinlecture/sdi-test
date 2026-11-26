@@ -1,0 +1,47 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node --test 1>&2 || exit 2",
+            "asyncRewake": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node --test 1>&2 || exit 2"
+          },
+          {
+            "type": "prompt",
+            "prompt": "이번 턴에 파일을 바꿨다면, 마지막 보고에 바뀐 파일 목록과 npm test 결과(통과 수)가 모두 있는가. 파일을 바꾸지 않았으면 통과. 빠졌으면 무엇이 빠졌는지 말할 것"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(node --test:*)",
+      "PowerShell(npm test:*)",
+      "PowerShell(node --test:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.production)",
+      "Edit(./tests/api.test.js)",
+      "Edit(./tests/page.test.js)",
+      "Edit(./.claude/**)",
+      "Write(./.claude/**)"
+    ]
+  }
+}

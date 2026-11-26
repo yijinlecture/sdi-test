@@ -1,0 +1,14 @@
+{
+  "name": "sdi-facility-reports",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SDI 시설 신고함 · 8일차 실습 · 설치할 패키지 없음 · Node 24",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test"
+  }
+}

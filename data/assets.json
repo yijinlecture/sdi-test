@@ -1,0 +1,13 @@
+[
+  { "asset_id": "PR-3F-02", "name": "3층 복합기", "location": "사무동 3F 복사실", "warranty_until": "2027-03-31" },
+  { "asset_id": "PR-5F-01", "name": "5층 프린터", "location": "사무동 5F 복사실", "warranty_until": "2026-06-30" },
+  { "asset_id": "PJ-3F-B", "name": "회의실 B 프로젝터", "location": "사무동 3F 회의실 B", "warranty_until": "2027-09-30" },
+  { "asset_id": "MN-4F-A", "name": "회의실 A 모니터", "location": "사무동 4F 회의실 A", "warranty_until": "2028-01-31" },
+  { "asset_id": "HV-O2-01", "name": "2층 사무실 공조기", "location": "사무동 2F", "warranty_until": "2026-12-31" },
+  { "asset_id": "HV-P2-01", "name": "생산동 2층 공조기", "location": "생산동 2F 공조실", "warranty_until": "2027-05-31" },
+  { "asset_id": "AC-1F-01", "name": "본관 정문 카드 리더", "location": "사무동 1F 정문", "warranty_until": "2027-02-28" },
+  { "asset_id": "AC-P1-01", "name": "생산동 출입 카드 리더", "location": "생산동 1F 출입구", "warranty_until": "2026-08-31" },
+  { "asset_id": "EV-O-02", "name": "승객용 엘리베이터 2호기", "location": "사무동", "warranty_until": "2029-12-31" },
+  { "asset_id": "EV-P1-02", "name": "화물 엘리베이터", "location": "생산동 1F", "warranty_until": "2028-06-30" },
+  { "asset_id": "PL-1F-EP1", "name": "생산동 1층 분전반", "location": "생산동 1F 분전반실", "warranty_until": "2030-12-31" }
+]
